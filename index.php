@@ -50,12 +50,12 @@ $(function(){
 	function checkIN(){
 		$('.modal').modal('show');
 		$.ajax({
-				url: "http://localhost/fyp/statistic/ajax.php",
+				url: "http://localhost/fyp/ajax/ajax.php",
 				type: "POST",
 				data:{'ajaxcall':'scan'},
 				success:function(data) {
 					$.ajax({
-						url: "http://localhost/fyp/statistic/ajax.php",
+						url: "http://localhost/fyp/ajax/ajax.php",
 						type: "POST",
 						data:{'ajaxcall':'showdata'},
 						success:function(showdata) {
